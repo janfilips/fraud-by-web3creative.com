@@ -6,6 +6,9 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://clickjob.ai",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
+  image: {
+    domains: ["flagcdn.com"],
+  },
 });
