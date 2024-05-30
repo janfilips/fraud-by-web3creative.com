@@ -11,6 +11,7 @@ module.exports = {
           "Inter",
           ...defaultTheme.fontFamily.sans,
         ],
+        stock: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },

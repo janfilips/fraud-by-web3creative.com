@@ -1,9 +1,8 @@
 ---
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
-import Dropdown from "./dropdown.astro";
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-
+// import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu } from "astro-navbar";
 
 type MenuItem = {
   title: string;
@@ -12,7 +11,7 @@ type MenuItem = {
 };
 
 const menuitems: MenuItem[] = [
-{
+  {
     title: "For Companies",
     path: "#",
   },
@@ -28,54 +27,60 @@ const menuitems: MenuItem[] = [
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header class="my-5 flex flex-col items-center justify-between lg:flex-row">
     <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="text-slate-500">Click</span><span
-            class=" text-slate-800 font-bold">Job.AI</span
-          >
-        </a>
+      <div class="flex w-full items-center justify-between lg:w-auto">
+        <a href="/" class="text-lg"><span class="text-gray-500">Click</span><span class="font-bold text-gray-800">Job.AI</span> </a>
         <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+          <MenuIcon class="h-4 w-4 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="flex items-center gap-4 mt-2 lg:mt-0">
+      <MenuItems class="mt-2 hidden lg:mt-0 lg:block">
+        <div class="flex flex-col items-center gap-4 lg:flex-row">
+          <div class="min-w-max shrink-0"><a href="#">For Companies</a></div>
+          <div><!-- spacer --></div>
+          <div class="min-w-max shrink-0"><a href="#">Log in</a></div>
+          <div class="min-w-max shrink-0"><Link href="#" size="md">Sign up</Link></div>
+          <Dropdown class="group relative">
+            <button
+              type="button"
+              class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus:ring-ring flex h-10 items-center justify-between gap-2 rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="country">
+              <img src="https://flagcdn.com/sk.svg" width="16" alt="Slovakia" />
 
-        <div class="shrink-0 min-w-max">  <a href="#">For Companies</a></div>
-        <div>           <!-- spacer -->           </div>
-        <div class="shrink-0 min-w-max">  <a href="#">Log in</a></div>
-        <div class="shrink-0 min-w-max">  <Link href="#" size="md">Sign up</Link></div>
-          <button
-            type="button"
-            class="flex h-10 gap-2 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            id="country"
-          >
-          <img
-          src="https://flagcdn.com/sk.svg"
-          width="16"
-          alt="Slovakia"/>
-
-            <span style="pointer-events: none;">Slovakia</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-4 w-4 opacity-50"
-              aria-hidden="true"
-            >
-              <path d="m6 9 6 6 6-6"></path>
-            </svg>
-          </button>
-
+              <span style="pointer-events: none;">Slovakia</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-4 w-4 opacity-50 group-open:rotate-180"
+                aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <DropdownItems>
+              <div class="z-10 w-full origin-top-left lg:absolute lg:left-0 lg:top-full lg:w-full">
+                <div class="mt-2 flex flex-col gap-2 px-3 text-sm lg:rounded-md lg:border lg:bg-white lg:py-2 lg:shadow">
+                  <a href="#" class="flex items-center gap-2">
+                    <img src="https://flagcdn.com/at.svg" width="16" alt="Austria" />
+                    Austria</a
+                  >
+                  <a href="#" class="flex items-center gap-2">
+                    <img src="https://flagcdn.com/pt.svg" width="16" alt="Slovakia" />
+                    Portugal</a
+                  >
+                </div>
+              </div>
+            </DropdownItems>
+          </Dropdown>
+        </div>
       </MenuItems>
     </Astronav>
-
   </header>
 </Container>

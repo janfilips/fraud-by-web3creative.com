@@ -1,0 +1,114 @@
+---
+import Card from "@components/ui/card.astro";
+import Badge from "@components/ui/badge.astro";
+import { Icon } from "astro-icon/components";
+
+// const { job } = Astro.props;
+const jobs = [
+  {
+    title: "Senior Product Manager - Remote",
+    category: "Product Management",
+    type: "contract",
+    location: "New York",
+    remote: true,
+    applicants: 5,
+    posted: "1 week ago",
+    logo: "logos/fingood",
+    company: "Fingood",
+  },
+  {
+    title: "Frontend Engineering Manager - Remote",
+    category: "Information Technology Engineering Manager",
+    type: "contract",
+    location: "San Francisco",
+    remote: true,
+    applicants: 17,
+    posted: "1 week ago",
+    logo: "logos/freelo",
+    company: "Freelo",
+  },
+  {
+    title: "Graphic Designer using Kittl",
+    category: "Arts and Design",
+    type: "contract",
+    location: "London",
+    remote: true,
+    applicants: 10,
+    posted: "1 week ago",
+    logo: "logos/glami",
+    company: "Glami",
+  },
+  {
+    title: "Front End Engineer - Full Time",
+    category: "Information Technology",
+    type: "full-time",
+    location: "Berlin",
+    remote: true,
+    applicants: 2,
+    posted: "1 week ago",
+    logo: "logos/webglobe",
+    company: "Webglobe",
+  },
+  {
+    title: "Financial Management Specialist, Realiste AI",
+    category: "Finance",
+    type: "full-time",
+    location: "Paris",
+    remote: true,
+    applicants: 8,
+    posted: "1 week ago",
+    logo: "logos/siemens",
+    company: "Siemens",
+  },
+];
+---
+
+<section class="mt-6 lg:mt-16">
+  <h2 class="text-2xl font-bold lg:text-4xl lg:tracking-tight">Recent Hot Offers</h2>
+  <div class="mt-6 grid gap-4">
+    {
+      jobs.map((job) => (
+        <Card>
+          <div class="absolute right-0 top-0 grid h-6 w-6 -translate-y-1/2 translate-x-1/2 place-items-center rounded-full bg-red-600 text-4xl text-white">
+            *
+          </div>
+
+          <div class="flex  min-w-0 flex-col items-start gap-6 lg:flex-row lg:items-center">
+            <div class="self-center px-3">
+              <Icon name={job.logo} class="h-10 w-24" />
+            </div>
+            <div class="flex flex-1 flex-col items-start gap-2">
+              <div>
+                <span class="text-sm text-gray-500">{job.company}</span>
+                <a href="#">
+                  <span class="absolute inset-0" /> <h3 class="text-lg font-semibold">{job.title}</h3>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <Badge>{job.type}</Badge>
+                {job.remote && <Badge>Remote</Badge>}
+                <span class="text-sm text-gray-600">{job.applicants}+ applicants</span>
+              </div>
+            </div>
+
+            <div class="flex w-full min-w-0 flex-col gap-2 lg:w-auto lg:items-end">
+              <span class="flex items-center gap-1">
+                <Icon name="lucide:map-pin" /> <span class="text-sm">{job.location}</span>
+              </span>
+              <time datetime="" class="flex items-center gap-1 text-sm text-gray-800">
+                <span>Posted {job.posted}</span>
+              </time>
+
+              <div class="flex w-full min-w-0 lg:w-auto">
+                <Badge variant="outline" class="truncate">
+                  {job.category}
+                </Badge>
+              </div>
+            </div>
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+</section>

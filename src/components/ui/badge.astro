@@ -1,0 +1,15 @@
+---
+const { variant = "primary", class: className } = Astro.props;
+
+const variantClasses = {
+  primary: "bg-black text-white rounded-full ",
+  secondary: "bg-gray-200 text-black rounded-full ",
+  outline: "border border-gray-300 text-gray-700 rounded shadow-sm ",
+};
+
+const variantClass = variantClasses[variant];
+---
+
+<span class:list={[variantClass, "px-2.5 py-1 font-stock text-xs font-medium", className]}>
+  <slot />
+</span>

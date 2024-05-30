@@ -7,7 +7,14 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   site: "https://clickjob.ai",
-  integrations: [tailwind(), mdx(), sitemap(), icon()],
+  integrations: [
+    tailwind(),
+    mdx(),
+    sitemap(),
+    icon({
+      iconDir: "src/assets",
+    }),
+  ],
   image: {
     domains: ["flagcdn.com"],
   },
