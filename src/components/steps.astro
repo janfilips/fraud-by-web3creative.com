@@ -1,0 +1,44 @@
+---
+import Container from "@components/container.astro";
+import { Image } from "astro:assets";
+import UploadImg from "@assets/vectors/upload.png";
+import InterviewImg from "@assets/vectors/interview.png";
+import JobImg from "@assets/vectors/job.png";
+import Card from "@components/ui/card.astro";
+---
+
+<section class="my-24">
+  <Container>
+    <h2 class="text-center text-2xl font-bold lg:text-4xl lg:tracking-tight">How it works</h2>
+    <div class="mt-6 grid gap-12 md:grid-cols-3">
+      <Card>
+        <div class="flex flex-col items-center">
+          <Image src={UploadImg} alt="Step 1" class="h-52 w-52 object-contain grayscale" />
+
+          <h3 class="mt-4 text-xl font-semibold">1. Upload Your Resume</h3>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Upload your resume and let our AI expertly sift through the noise, meticulously matching your skills to ideal jobs.
+          </p>
+        </div>
+      </Card>
+      <Card>
+        <div class="flex flex-col items-center">
+          <Image src={InterviewImg} alt="Step 2" class="h-52 w-52 object-contain grayscale" />
+          <h3 class="mt-4 text-xl font-semibold">2. Tailored Listings</h3>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Explore job listings curated just for you. Our advanced AI aligns suitable opportunities with your unique career goals.
+          </p>
+        </div>
+      </Card>
+      <Card>
+        <div class="flex flex-col items-center">
+          <Image src={JobImg} alt="Step 3" class="h-52 w-52 object-contain grayscale" />
+          <h3 class="mt-4 text-xl font-semibold">3. Streamlined Hiring</h3>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Follow your applications epic journey seamlessly. Our platform lets you effortlessly track progress towards your dream job.
+          </p>
+        </div>
+      </Card>
+    </div>
+  </Container>
+</section>

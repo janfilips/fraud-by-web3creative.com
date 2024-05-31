@@ -1,9 +1,69 @@
-<footer class="my-20">
-  <p class="text-center text-sm text-gray-500">
-    Copyright © {new Date().getFullYear()} ClickJob.AI. All rights reserved.
-  </p>
+---
+import Container from "@components/container.astro";
+import { Icon } from "astro-icon/components";
+---
 
-  <p class="mt-1 text-center text-xs text-gray-500">
-    Frontend by <a href="https://web3templates.com" target="_blank" rel="noopener" class="hover:underline"> Web3Templates </a>
-  </p>
+<footer class="mt-20 bg-black py-10">
+  <Container>
+    <div class="grid md:grid-cols-3 lg:grid-cols-6">
+      <div class="lg:col-span-3">
+        <div>
+          <a href="/" class="text-lg"><span class="text-white">Click</span><span class="font-bold text-gray-400">Job.AI</span> </a>
+        </div>
+
+        <p class="mt-4 max-w-md text-white">
+          Clickjob is an AI based job board that connects job seekers with employers. We are building a platform that is open, transparent, and fair
+          for everyone.
+        </p>
+        <div class="mt-4 flex gap-3 text-gray-400 transition">
+          <a href="#" class="hover:text-white"><Icon size={24} name="hugeicons:facebook-01" /> <span class="sr-only">Facebook</span> </a>
+          <a href="#" class="hover:text-white"
+            ><Icon size={24} name="hugeicons:new-twitter-rectangle" /><span class="sr-only">X (previously twitter)</span>
+          </a>
+          <a href="#" class="hover:text-white"><Icon size={24} name="hugeicons:github-01" /><span class="sr-only">Github</span> </a>
+          <a href="#" class="hover:text-white"><Icon size={24} name="hugeicons:linkedin-01" /><span class="sr-only">Linkedin</span> </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-white">Remote Jobs</h3>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Engineering Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Marketing Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Sales Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Product Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Design Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Customer Support Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Finance Jobs</a></li>
+          <li><a href="/jobs" class="text-gray-400 hover:underline">Legal Jobs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold text-white">Company</h3>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li><a href="/about" class="text-gray-400 hover:underline">About</a></li>
+          <li><a href="/contact" class="text-gray-400 hover:underline">Contact</a></li>
+          <li><a href="/terms" class="text-gray-400 hover:underline">Terms</a></li>
+          <li><a href="/privacy" class="text-gray-400 hover:underline">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-white">Help</h3>
+        <ul class="mt-4 flex flex-col gap-2">
+          <li><a href="/faq" class="text-gray-400 hover:underline">Open a Ticket</a></li>
+          <li><a href="/faq" class="text-gray-400 hover:underline">FAQ</a></li>
+          <li><a href="/contact" class="text-gray-400 hover:underline">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12">
+      <p class="text-center text-sm text-gray-400">
+        Copyright © {new Date().getFullYear()} ClickJob.AI. All rights reserved.
+      </p>
+
+      <p class="mt-1 text-center text-xs text-gray-400">
+        Frontend by <a href="https://web3templates.com" target="_blank" rel="noopener" class="hover:underline"> Web3Templates </a>
+      </p>
+    </div>
+  </Container>
 </footer>

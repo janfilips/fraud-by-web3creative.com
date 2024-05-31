@@ -20,9 +20,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.18
     version: 5.0.18
-  '@iconify-json/bx':
-    specifier: ^1.1.10
-    version: 1.1.10
+  '@iconify-json/hugeicons':
+    specifier: ^1.1.0
+    version: 1.1.0
   '@iconify-json/lucide':
     specifier: ^1.1.188
     version: 1.1.188
@@ -944,8 +944,8 @@ packages:
     resolution: {integrity: sha512-rJzSrtJ3b7djiGFvRuTe6stDfbYJGhdQSfn2SI2WfXviee7Er0yKAHE5u7FU7OWVQQQ1x3+cxdmx9NdiAkcrcA==}
     dev: false
 
-  /@iconify-json/bx@1.1.10:
-    resolution: {integrity: sha512-4JzMDYhs/hkU9mO8nNMNKZwHn706oQaD46URyUuD4fP/XAWGf01vg6wKITmQseEHsHDrtKAXjwcumfnTUDi3OQ==}
+  /@iconify-json/hugeicons@1.1.0:
+    resolution: {integrity: sha512-MzzShBJQsOB92kzPMBe2dI35m0BrR7Z7yEQ0Al84ULQ46PRAAu+RBkqmTzqY+T2uBB1PeGe8sPs+8lGRXClGjg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false

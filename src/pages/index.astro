@@ -1,21 +1,22 @@
 ---
 import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Companies from "@components/companies.astro";
 import Hero from "@components/hero.astro";
 import Joblisting from "@components/joblisting.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Hotjobs from "@components/hotjobs.astro";
+import Cta from "@components/cta.astro";
+import Steps from "@components/steps.astro";
 ---
 
 <Layout title="">
   <Container>
     <Hero />
     <Logos />
-    <!-- <Companies /> -->
-    <Joblisting/>
+    <Hotjobs />
+    <Steps />
+    <Joblisting />
 
-
-   <!--   <Cta /> -->
+    <Cta />
   </Container>
 </Layout>
