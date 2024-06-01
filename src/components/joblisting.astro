@@ -82,8 +82,8 @@ const jobs = [
               </div>
 
               <div class="flex items-center gap-2">
-                <Badge>{job.type}</Badge>
-                {job.remote && <Badge>Remote</Badge>}
+                <Badge variant="hotpink">{job.type}</Badge>
+                {job.remote && <Badge variant="warning">Remote</Badge>}
                 <span class="text-sm text-gray-600">{job.applicants}+ applicants</span>
               </div>
             </div>

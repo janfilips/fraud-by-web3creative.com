@@ -68,11 +68,7 @@ const jobs = [
   <div class="mt-6 grid gap-4">
     {
       jobs.map((job) => (
-        <Card>
-          <div class="pointer-events-none absolute right-0 top-0 grid h-6 w-6 -translate-y-1/2 translate-x-1/2 place-items-center rounded-full bg-red-600 text-4xl text-white">
-            *
-          </div>
-
+        <Card class="border-l-2 border-l-red-500">
           <div class="flex  min-w-0 flex-col items-start gap-6 lg:flex-row lg:items-center">
             <div class="self-center px-3">
               <Icon name={job.logo} class="h-10 w-24" />
@@ -81,13 +77,16 @@ const jobs = [
               <div>
                 <span class="text-sm text-gray-500">{job.company}</span>
                 <a href="#">
-                  <span class="absolute inset-0" /> <h3 class="text-lg font-semibold">{job.title}</h3>
+                  <span class="absolute inset-0" />{" "}
+                  <h3 class="flex items-center gap-1 text-lg font-semibold lg:text-xl">
+                    <span>{job.title} </span> <Badge variant="danger">Hot</Badge>
+                  </h3>
                 </a>
               </div>
 
               <div class="flex items-center gap-2">
-                <Badge>{job.type}</Badge>
-                {job.remote && <Badge>Remote</Badge>}
+                <Badge variant="hotpink">{job.type}</Badge>
+                {job.remote && <Badge variant="warning">Remote</Badge>}
                 <span class="text-sm text-gray-600">{job.applicants}+ applicants</span>
               </div>
             </div>

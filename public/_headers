@@ -1,0 +1,4 @@
+# DELETE this before production
+
+https://clickjob.pages.dev/*
+X-Robots-Tag: noindex

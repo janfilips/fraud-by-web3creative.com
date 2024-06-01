@@ -1,3 +1,12 @@
-<div class="relative min-w-0 rounded-md border border-gray-200 p-4 shadow-sm transition-all hover:bg-gray-50 lg:p-6">
+---
+import { cx } from "@utils/all";
+const { class: className } = Astro.props;
+---
+
+<div
+  class:list={cx(
+    "relative min-w-0 rounded-md border border-gray-200 px-4 py-3 shadow-sm transition-all hover:bg-gray-50 lg:px-6 lg:py-4",
+    className,
+  )}>
   <slot />
 </div>

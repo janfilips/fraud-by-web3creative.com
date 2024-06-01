@@ -50,6 +50,9 @@ dependencies:
   sharp:
     specifier: ^0.33.4
     version: 0.33.4
+  tailwind-merge:
+    specifier: ^2.3.0
+    version: 2.3.0
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
@@ -439,6 +442,13 @@ packages:
       '@babel/helper-plugin-utils': 7.24.5
       '@babel/plugin-syntax-jsx': 7.24.1(@babel/core@7.24.5)
       '@babel/types': 7.24.5
+    dev: false
+
+  /@babel/runtime@7.24.6:
+    resolution: {integrity: sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
     dev: false
 
   /@babel/template@7.24.0:
@@ -4325,6 +4335,10 @@ packages:
       picomatch: 2.3.1
     dev: false
 
+  /regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+    dev: false
+
   /rehype-parse@9.0.0:
     resolution: {integrity: sha512-WG7nfvmWWkCR++KEkZevZb/uw41E8TsH4DsY9UxsTbIXCVGbAs4S+r8FrQ+OtH5EEQAs+5UxKC42VinkmpA1Yw==}
     dependencies:
@@ -4818,6 +4832,12 @@ packages:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.1
+    dev: false
+
+  /tailwind-merge@2.3.0:
+    resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
+    dependencies:
+      '@babel/runtime': 7.24.6
     dev: false
 
   /tailwindcss@3.4.3:
