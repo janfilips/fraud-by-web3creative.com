@@ -10,8 +10,7 @@ const features = [
   },
   {
     title: "Brightwater Ireland",
-    description:
-      "Brightwater is a job recruitment agency in Ireland. Thry have offices in Dublin, Cork and Belfast for job seekers and employers.",
+    description: "Brightwater is a job recruitment agency in Ireland. Thry have offices in Dublin, Cork and Belfast for job seekers and employers.",
     logo: "https://www.brightwater.ie/images/default-source/Homepage/brightwater-recruitment-consultants425de203f5c061918859ff000019b0e4.jpg?sfvrsn=489d8376_2&width=480",
   },
   {
@@ -24,24 +23,22 @@ const features = [
 ---
 
 <div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Companies that will move you forward
-
-  </h2>
-  <p class="text-lg mt-4 text-gray-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+  <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">Companies that will move you forward</h2>
+  <p class="mt-4 text-lg text-gray-600">
+    Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="mt-16 grid gap-16 sm:grid-cols-2 md:grid-cols-3">
   {
     features.map((item) => (
-      <div class="flex flex-col gap-4 items-start bg-gray-100 p-8 rounded-sm">
-         <div class="grid place-items-center h-16">  <Image src={item.logo} alt="logo" inferSize={true} class="h-auto max-w-40" /></div>
+      <div class="flex flex-col items-start gap-4 rounded-sm bg-gray-100 p-8">
+        <div class="grid h-16 place-items-center">
+          {" "}
+          <Image src={item.logo} alt="logo" inferSize={true} class="h-auto max-w-40" />
+        </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-gray-500 mt-2 leading-relaxed">{item.description}</p>
+          <h3 class="text-lg font-semibold">{item.title}</h3> <p class="mt-2 leading-relaxed text-gray-500">{item.description}</p>
         </div>
       </div>
     ))

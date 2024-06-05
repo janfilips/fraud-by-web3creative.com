@@ -70,7 +70,7 @@ const jobs = [
       jobs.map((job) => (
         <Card>
           <div class="flex  min-w-0 flex-col items-start gap-6 lg:flex-row lg:items-center">
-            <div class="self-center px-3">
+            <div class="self-center px-3 dark:invert">
               <Icon name={job.logo} class="h-10 w-24" />
             </div>
             <div class="flex flex-1 flex-col items-start gap-2">
@@ -84,7 +84,7 @@ const jobs = [
               <div class="flex items-center gap-2">
                 <Badge variant="hotpink">{job.type}</Badge>
                 {job.remote && <Badge variant="warning">Remote</Badge>}
-                <span class="text-sm text-gray-600">{job.applicants}+ applicants</span>
+                <span class="text-sm text-gray-600 dark:text-gray-400">{job.applicants}+ applicants</span>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ const jobs = [
               <span class="flex items-center gap-1">
                 <Icon name="lucide:map-pin" /> <span class="text-sm">{job.location}</span>
               </span>
-              <time datetime="" class="flex items-center gap-1 text-sm text-gray-800">
+              <time datetime="" class="flex items-center gap-1 text-sm text-gray-800 dark:text-gray-400">
                 <span>Posted {job.posted}</span>
               </time>
 

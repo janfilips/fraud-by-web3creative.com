@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+import { ThemeSwitch } from "astro-color-scheme";
+---
+
+<div>
+  <ThemeSwitch strategy="button">
+    <button class="px-1 py-2">
+      <span class="sr-only">Toggle Theme</span>
+      <Icon class="dark:hidden" name="lucide:sun" />
+      <Icon class="hidden dark:block" name="lucide:moon-star" />
+    </button>
+  </ThemeSwitch>
+</div>

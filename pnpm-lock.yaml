@@ -38,6 +38,9 @@ dependencies:
   astro:
     specifier: ^4.8.7
     version: 4.8.7(typescript@5.4.5)
+  astro-color-scheme:
+    specifier: ^1.1.5
+    version: 1.1.5
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -1765,6 +1768,10 @@ packages:
   /astring@1.8.6:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
+    dev: false
+
+  /astro-color-scheme@1.1.5:
+    resolution: {integrity: sha512-enYqCiSopMkVCmL5tuXgJk9AoJKCYDpV92F0bZUbqTMWHKqPnXwWS+iJC60Rf87b33LhCyFmB2yqAZ+c4RvjGw==}
     dev: false
 
   /astro-icon@1.1.0:
