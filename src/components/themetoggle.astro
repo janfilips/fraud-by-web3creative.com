@@ -1,9 +1,10 @@
 ---
 import { Icon } from "astro-icon/components";
 import { ThemeSwitch } from "astro-color-scheme";
+const { class: className } = Astro.props;
 ---
 
-<div>
+<div class={className}>
   <ThemeSwitch strategy="button">
     <button class="px-1 py-2">
       <span class="sr-only">Toggle Theme</span>

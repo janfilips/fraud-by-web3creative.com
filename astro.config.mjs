@@ -18,4 +18,5 @@ export default defineConfig({
   image: {
     domains: ["flagcdn.com"],
   },
+  compressHTML: false,
 });

@@ -69,43 +69,66 @@ const jobs = [
     {
       jobs.map((job) => (
         <Card class="border-l-2 border-l-red-500">
-          <div class="flex  min-w-0 flex-col items-start gap-6 lg:flex-row lg:items-center">
-            <div class="self-center px-3 dark:invert">
-              <Icon name={job.logo} class="h-10 w-24" />
-            </div>
-            <div class="flex flex-1 flex-col items-start gap-2">
+          <details>
+            <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <div class="flex  min-w-0 flex-col items-start gap-3 lg:flex-row lg:items-center lg:gap-6">
+                <div class="px-3 lg:self-center dark:invert">
+                  <Icon name={job.logo} class="h-10 w-24" />
+                </div>
+                <div class="flex flex-1 flex-col items-start gap-2">
+                  <div>
+                    <span class="text-sm text-gray-500">{job.company}</span>
+
+                    <h3 class="flex items-center gap-1 text-lg font-semibold lg:text-xl">
+                      <span>{job.title} </span> <Badge variant="danger">Hot</Badge>
+                    </h3>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <Badge variant="hotpink">{job.type}</Badge>
+                    {job.remote && <Badge variant="warning">Remote</Badge>}
+                    <span class="text-sm text-gray-600 dark:text-gray-400">{job.applicants}+ applicants</span>
+                  </div>
+                </div>
+
+                <div class="flex w-full min-w-0 flex-col gap-2 lg:w-auto lg:items-end">
+                  <span class="flex items-center gap-1">
+                    <Icon name="lucide:map-pin" /> <span class="text-sm">{job.location}</span>
+                  </span>
+                  <time datetime="" class="flex items-center gap-1 text-sm text-gray-800 dark:text-gray-400">
+                    <span>Posted {job.posted}</span>
+                  </time>
+
+                  <div class="flex w-full min-w-0 lg:w-auto">
+                    <Badge variant="outline" class="truncate">
+                      {job.category}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </summary>
+            <div class="-mx-4 -mb-3 mt-5 rounded-b-lg bg-gray-100 p-5 shadow-inner lg:-mx-6 lg:-mb-4 dark:bg-gray-800">
+              <p class="text-sm lg:text-base">
+                Join EventMobi as a Frontend Engineering Manager in a fully remote position. Lead a team of 8-10 engineers, focusing on people
+                management, process/project management, and hands-on coding/reviews. Drive technical strategy, project delivery, and cross-functional
+                collaboration to shape and execute the company's technical vision. Enjoy competitive compensation, stock options, generous time-off,
+                and a supportive remote work environment. Apply now to be part of a dynamic team revolutionizing the event planning industry.
+              </p>
+              <p class="mt-2 text-sm leading-loose lg:text-base">
+                <strong>Industry:</strong> Internet Software & Services <br />
+                <strong>Number of employees:</strong> 100-500 employees
+              </p>
               <div>
-                <span class="text-sm text-gray-500">{job.company}</span>
-                <a href="#">
-                  <span class="absolute inset-0" />{" "}
-                  <h3 class="flex items-center gap-1 text-lg font-semibold lg:text-xl">
-                    <span>{job.title} </span> <Badge variant="danger">Hot</Badge>
-                  </h3>
-                </a>
-              </div>
-
-              <div class="flex items-center gap-2">
-                <Badge variant="hotpink">{job.type}</Badge>
-                {job.remote && <Badge variant="warning">Remote</Badge>}
-                <span class="text-sm text-gray-600 dark:text-gray-400">{job.applicants}+ applicants</span>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  {["People Management", "Project Management", "Technical Strategy", "Cross-functional Collaboration", "Remote Work"].map((item) => (
+                    <Badge variant="secondary" class="truncate">
+                      {item}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             </div>
-
-            <div class="flex w-full min-w-0 flex-col gap-2 lg:w-auto lg:items-end">
-              <span class="flex items-center gap-1">
-                <Icon name="lucide:map-pin" /> <span class="text-sm">{job.location}</span>
-              </span>
-              <time datetime="" class="flex items-center gap-1 text-sm text-gray-800 dark:text-gray-400">
-                <span>Posted {job.posted}</span>
-              </time>
-
-              <div class="flex w-full min-w-0 lg:w-auto">
-                <Badge variant="outline" class="truncate">
-                  {job.category}
-                </Badge>
-              </div>
-            </div>
-          </div>
+          </details>
         </Card>
       ))
     }

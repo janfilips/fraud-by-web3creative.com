@@ -61,7 +61,7 @@ const menuitems: MenuItem[] = [
             </button>
             <DropdownItems>
               <div class="absolute right-0 top-full z-10 w-full min-w-32 origin-top-right">
-                <div class="mt-2 flex flex-col gap-2 rounded-md border bg-white px-3 py-2 text-sm shadow">
+                <div class="mt-2 flex flex-col gap-2 rounded-md border bg-white px-3 py-2 text-sm shadow dark:bg-gray-800">
                   <a href="#" class="flex items-center gap-2">
                     <img src="https://flagcdn.com/at.svg" width="16" alt="Austria" />
                     Austria</a
@@ -75,7 +75,7 @@ const menuitems: MenuItem[] = [
             </DropdownItems>
           </Dropdown>
 
-          <MenuIcon class="h-4 w-4 text-gray-800" />
+          <MenuIcon class="h-4 w-4 text-gray-800 dark:text-white" />
         </div>
       </div>
       <MenuItems class="mt-4 hidden lg:mt-0 lg:block">
@@ -109,7 +109,7 @@ const menuitems: MenuItem[] = [
             </button>
             <DropdownItems>
               <div class="z-10 w-full origin-top-left lg:absolute lg:left-0 lg:top-full lg:w-full">
-                <div class="mt-2 flex flex-col gap-2 px-3 text-sm lg:rounded-md lg:border lg:bg-white lg:py-2 lg:shadow">
+                <div class="mt-2 flex flex-col gap-2 px-3 text-sm lg:rounded-md lg:border lg:bg-white lg:py-2 lg:shadow dark:bg-gray-800">
                   <a href="#" class="flex items-center gap-2">
                     <img src="https://flagcdn.com/at.svg" width="16" alt="Austria" />
                     Austria</a
@@ -122,7 +122,7 @@ const menuitems: MenuItem[] = [
               </div>
             </DropdownItems>
           </Dropdown>
-          <Themetoggle />
+          <Themetoggle class="hidden lg:block" />
         </div>
       </MenuItems>
     </Astronav>
