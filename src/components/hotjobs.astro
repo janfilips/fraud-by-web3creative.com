@@ -2,6 +2,7 @@
 import Card from "@components/ui/card.astro";
 import Badge from "@components/ui/badge.astro";
 import { Icon } from "astro-icon/components";
+import Link from "@components/ui/link.astro";
 
 // const { job } = Astro.props;
 const jobs = [
@@ -114,17 +115,22 @@ const jobs = [
                 collaboration to shape and execute the company's technical vision. Enjoy competitive compensation, stock options, generous time-off,
                 and a supportive remote work environment. Apply now to be part of a dynamic team revolutionizing the event planning industry.
               </p>
-              <p class="mt-2 text-sm leading-loose lg:text-base">
+              <p class="mt-2 text-sm leading-relaxed lg:text-base lg:leading-loose">
                 <strong>Industry:</strong> Internet Software & Services <br />
                 <strong>Number of employees:</strong> 100-500 employees
               </p>
-              <div>
+              <div class="flex flex-wrap items-center justify-between gap-5">
                 <div class="mt-3 flex flex-wrap gap-2">
                   {["People Management", "Project Management", "Technical Strategy", "Cross-functional Collaboration", "Remote Work"].map((item) => (
                     <Badge variant="secondary" class="truncate">
                       {item}
                     </Badge>
                   ))}
+                </div>
+                <div>
+                  <Link href="#" class="flex items-center justify-center gap-1" rel="noopener">
+                    Apply Now <Icon name="lucide:arrow-right" class="h-4 w-4" />
+                  </Link>
                 </div>
               </div>
             </div>
