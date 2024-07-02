@@ -8,7 +8,7 @@ Contact me for more details or proof.
 
 ## The Fraud
 
-Built by Surjith S M from Web3Creative (https://web3creative.com)
+The frau by Surjith S M from Web3Creative (https://web3creative.com)
 
 ## Installation
 
