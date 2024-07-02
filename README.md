@@ -1,6 +1,14 @@
-# ClickJob.AI
+## About
 
-Website front-end for ClickJob.AI. Built by Surjith S M from Web3Creative (https://web3creative.com)
+These templates from web3templates.com are from a fraudulent company.
+
+Discover how Surjith S M, a deceitful freelancer, scammed us and many others at https://surjithctly.com.
+
+Contact me for more details or proof.
+
+## The Fraud
+
+Built by Surjith S M from Web3Creative (https://web3creative.com)
 
 ## Installation
 
