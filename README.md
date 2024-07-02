@@ -2,9 +2,10 @@
 
 These templates from web3templates.com are from a fraudulent company.
 
-Discover how Surjith S M, a deceitful freelancer, scammed us and many others at https://surjithctly.com.
+Learn how Surjith S M, a deceitful freelancer, scammed us and many others at https://surjithctly.com.
 
 Contact me for more details or proof.
+
 
 ## The Fraud
 
