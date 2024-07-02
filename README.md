@@ -20,7 +20,7 @@ We got on a call with Surjith S M, and we agreed on the timeframe and scope of t
 
 Three weeks down the line, with not a single line of code produced by him, we asked for a refund due to zero progress. He agreed to a full refund but then started coming up with bullshit bank **excuses** and eventually stopped communicating altogether. As you guessed correctly, he **pocketed $2,250** from us and **delivered zero work in return**.
 
-Scam from the get go!
+**Scam from the get go!**
 
 ## Surjith S M - Do Your Due Diligence
 
