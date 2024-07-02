@@ -9,7 +9,7 @@ Contact me for more details or proof.
 
 ## The Fraud
 
-The Fraud by Surjith S. M. from Web3Templates (https://web3templates.com/), also known as Web3Creative (https://web3creative.com). I guess lesson learned: trust anything that’s got Web3 in it…
+The Fraud by Surjith S. M. from Web3Templates (https://web3templates.com/), also known as Web3Creative (https://web3creative.com) and **Surjith S M** (https://surjithctly.in/). I guess lesson learned: trust anything that’s got Web3 in it…
 
 ## Fraudulent Freelancer - Surjith S M
 
