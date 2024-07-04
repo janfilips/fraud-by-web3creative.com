@@ -18,7 +18,7 @@ I guess lesson learned: trust anything that’s got Web3 in it…
 
 We had a call with Surjith S M and agreed on the timeframe and scope of the work. He priced the total job at $4,500 and asked for $2,250 upfront. After that, there was a period of no communication from him. He eventually made **excuses** about time differences and being sick with a virus, although I could see on his GitHub that he was actively coding on his private repositories.
 
-Three weeks down the line, with not a single line of code produced by him, we asked for a refund due to zero progress. He agreed to a full refund but then started coming up with bullshit bank **excuses** and eventually stopped communicating altogether. As you guessed correctly, he **pocketed $2,250** from us and **delivered zero work in return**.
+Three weeks down the line, with not a single line of code produced by him, we asked for a refund due to zero progress. He agreed to a full refund but then started coming up with bullshit bank **excuses** and eventually stopped communicating altogether. As you guessed correctly, he **pocketed $2,250** from us and **delivered zero work** in return.
 
 **Scam from the get go!**
 
